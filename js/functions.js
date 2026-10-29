@@ -660,7 +660,9 @@
 		});	
 		
 		/* -- Expanding Search */
-		new UISearch( document.getElementById( "sb-search" ) );
+		if ( $("#sb-search .sb-search-input").length ) {
+			new UISearch( document.getElementById( "sb-search" ) );
+		}
 		
 	});	/* -- Document Ready /- */
 	
