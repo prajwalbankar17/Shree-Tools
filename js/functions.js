@@ -99,6 +99,7 @@
 	   (see style.css) — the old JS navbar-fixed-top toggle has been removed. */
 	$( document ).scroll(function()
 	{
+		$(".menu-block").toggleClass("is-scrolled", $(this).scrollTop() > 40);
 		if ($(this).scrollTop() >= 50)
 		{
 			/* If page is scrolled more than 50px */
